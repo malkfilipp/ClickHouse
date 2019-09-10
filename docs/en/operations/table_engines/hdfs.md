@@ -49,7 +49,7 @@ SELECT * FROM hdfs_engine_table LIMIT 2
     - Indexes.
     - Replication.
 
-**Globs in path**
+## Globs in Path
 
 Multiple path components can have globs. For being processed file should exists and matches to the whole path pattern. Listing of files determines during `SELECT` (not at `CREATE` moment).
 
