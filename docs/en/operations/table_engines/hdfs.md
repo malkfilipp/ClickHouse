@@ -95,7 +95,8 @@ CREATE TABLE table_with_asterisk (name String, value UInt32) ENGINE = HDFS('hdfs
 Create table with files named `file000`, `file001`, ... , `file999`:
 
 ```sql
-CREARE TABLE big_table (name String, value UInt32) ENGINE = HDFS('hdfs://hdfs1:9000/big_dir/file{0..9}{0..9}{0..9}', 'CSV')
+CREARE TABLE big_table (name String, value UInt32)
+ENGINE = HDFS('hdfs://hdfs1:9000/big_dir/file{0..9}{0..9}{0..9}', 'CSV')
 ```
 
 [Original article](https://clickhouse.yandex/docs/en/operations/table_engines/hdfs/) <!--hide-->
