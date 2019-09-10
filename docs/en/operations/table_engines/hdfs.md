@@ -81,7 +81,7 @@ Another way:
 CREATE TABLE table_with_question_mark (name String, value UInt32) ENGINE = HDFS('hdfs://hdfs1:9000/{some,another}_dir/some_file_?', 'TSV')
 ```
 
-Table consists of all the files in both directories (all files should satisfy format and schema described in query):
+Table consisting of all the files in both directories (all files should satisfy format and schema described in query):
 
 ```sql
 CREATE TABLE table_with_asterisk (name String, value UInt32) ENGINE = HDFS('hdfs://hdfs1:9000/{some,another}_dir/*', 'TSV')
