@@ -51,7 +51,7 @@ SELECT * FROM hdfs_engine_table LIMIT 2
 
 ## Globs in Path
 
-Multiple path components can have globs. For being processed file should exists and matches to the whole path pattern. Listing of files determines during `SELECT` (not at `CREATE` moment).
+Multiple path components can have globs. File should exist and match the whole path pattern to be processed. List of available files is determined during each `SELECT` (not at the moment of `CREATE TABLE`).
 
 - `*` — Substitutes any number of any characters including none.
 - `?` — Substitutes any single character.
