@@ -1,3 +1,5 @@
+#include <chrono>
+
 #include <Common/Exception.h>
 #include <Common/SensitiveDataMasker.h>
 #include <Poco/AutoPtr.h>
